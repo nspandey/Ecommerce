@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="head">
+            <div class="text">Welcome to Our Store!</div>
+            <div class="auth-buttons">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Image/Logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form id="sign-in-form" onsubmit="return validateSignIn()">
+          <input type="text" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          <button type="submit">Sign In</button>
+          <div class="error" id="sign-in-error"></div>
+        </form>
+        <div class="switch">
+          <a href="signup.html">Don't have an account? Sign Up</a>
+        </div>
+      </div>
+      <script src="signin.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>

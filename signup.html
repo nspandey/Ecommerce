@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="text">Welcome to Our Store!</div>
+            <div class="auth-buttons">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Image/Logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="sign-up-form" onsubmit="return validateSignUp()">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="email" id="email" placeholder="Email ID" />
+          <input type="tel" id="phone" placeholder="Phone Number" />
+          <input type="text" id="address" placeholder="Address" />
+          <button type="submit">Sign Up</button>
+          <div class="error" id="sign-up-error"></div>
+        </form>
+        <div class="switch">
+          <a href="signin.html">Already have an account? Sign In</a>
+        </div>
+      </div>
+      <script src="signup.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
